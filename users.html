@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./static/css/semantic.min.css" />
+  <link rel="stylesheet" href="./static/css/style.css">
+
+  <script src="./static/js/jquery-3.6.0.min.js"></script>
+  <!-- <script src="https://kit.fontawesome.com/bbe894510c.js" crossorigin="anonymous"></script> -->
+  <script src="./static/js/semantic.min.js"></script>
+</head>
+
+<body>
+  <div class="ui container" id="container" style="margin-bottom: 20px;">
+    <div class="ui sticky" style="background-color: aliceblue;">
+      <div class="ui secondary menu">
+        <a class="item" href="index.html">
+          <h3>Home</h3>
+        </a>
+        <a class="item">
+          <h3>Problems</h3>
+        </a>
+        <a class="item active">
+          <h3>Users</h3>
+        </a>
+        <a class="item">
+          <h3>Contests</h3>
+        </a>
+        <a class="item">
+          <h3>Submissions</h3>
+        </a>
+        <div class="right menu">
+          <div class="ui pointing dropdown item">
+            <img class="ui avatar image" src="https://www.gravatar.com/avatar/61ed114b5efb6c8c179081e8efc00d90?d=identicon&amp;s=32" height="24" width="24">
+            <span class="newbie"><h3>patpro28</h3></span>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+              <a href="./user-page.html" class="item">View profile</a>
+              <a class="item">Male</a>
+              <a class="item">Female</a>
+              <a class="item">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h3 class="ui block header">Leaderboard</h3>
+    <div class="ui menu">
+      <div class="ui pagination menu">
+        <a class="icon item">
+          <i class="angle double left icon"></i>
+        </a>
+        <a class="icon item">
+          <i class="angle left icon"></i>
+        </a>
+        <a class="item">1</a>
+        <a class="icon disabled item">
+          <i class="ellipsis horizontal icon"></i>
+        </a>
+        <a class="item">4</a>
+        <a class="active item">5</a>
+        <a class="item">6</a>
+        <a class="icon disabled item">
+          <i class="ellipsis horizontal icon"></i>
+        </a>
+        <a class="item">10</a>
+        <a class="icon item">
+          <i class="angle right icon"></i>
+        </a>
+        <a class="icon item">
+          <i class="angle double right icon"></i>
+        </a>
+      </div>
+      <div class="right aligned item">
+        <div class="ui icon input">
+          <input type="text" placeholder="Search...">
+          <i class="search link icon"></i>
+        </div>
+      </div>
+    </div>
+    <table class="ui celled striped table">
+      <thead>
+        <tr>
+          <th class="one wide center aligned">Rank</th>
+          <th class="eight wide center aligned">Username</th>
+          <th class="two wide center aligned"></th>
+          <th class="two wide center aligned"></th>
+          <th class="two wide center aligned"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="center aligned">1</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user newbie" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">2</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user amateur" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">3</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user expert" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">4</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user candidate-master" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">5</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user master" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">6</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user grandmaster" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">6</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user grandmaster" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">6</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user grandmaster" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">6</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user grandmaster" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">6</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user grandmaster" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">6</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user grandmaster" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">6</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user grandmaster" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">6</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user grandmaster" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">6</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user grandmaster" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">6</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user grandmaster" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">6</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user grandmaster" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">6</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user grandmaster" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">6</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user grandmaster" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">6</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user grandmaster" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">6</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user grandmaster" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">6</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user grandmaster" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">6</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user grandmaster" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">6</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user grandmaster" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">6</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user grandmaster" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">6</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user grandmaster" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">6</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user grandmaster" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">6</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user grandmaster" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">6</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user grandmaster" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">6</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user grandmaster" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">6</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user grandmaster" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">6</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user grandmaster" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">6</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user grandmaster" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">6</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user grandmaster" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">6</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user grandmaster" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="center aligned">6</td>
+          <td>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <a class="left aligned user grandmaster" href="#">Pham Anh Tu</a>
+              </div>
+              <div class="eight wide column">
+                <p class="right aligned six wide organization"> Tmath </p>
+              </div>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="ui pagination bottom menu">
+      <a class="icon item">
+        <i class="angle double left icon"></i>
+      </a>
+      <a class="icon item">
+        <i class="angle left icon"></i>
+      </a>
+      <a class="item">1</a>
+      <a class="icon disabled item">
+        <i class="ellipsis horizontal icon"></i>
+      </a>
+      <a class="item">4</a>
+      <a class="active item">5</a>
+      <a class="item">6</a>
+      <a class="icon disabled item">
+        <i class="ellipsis horizontal icon"></i>
+      </a>
+      <a class="item">10</a>
+      <a class="icon item">
+        <i class="angle right icon"></i>
+      </a>
+      <a class="icon item">
+        <i class="angle double right icon"></i>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="ui inverted vertical footer segment">
+    <div class="ui container">
+      Travel Match 2015. All Rights Reserved
+    </div>
+  </div>
+  <script>
+    $('.ui.dropdown')
+      .dropdown({
+        on: 'hover'
+      })
+    ;
+    $('.ui.sticky')
+      .sticky({
+        context: '#container'
+      })
+    ;
+  </script>
+</body>
+
+</html>

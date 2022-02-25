@@ -1,0 +1,32 @@
+.user {
+  font-weight: 700; 
+}
+
+.newbie, .newbie:hover {
+  color:#999999;
+}
+
+.amateur, .amateur:hover {
+  color: #00A900;
+}
+
+.expert, .expert:hover {
+  color: #0000FF;
+}
+
+.candidate-master, .candidate-master:hover {
+  color: #800080;
+}
+
+.master, .master:hover {
+  color: #ffb100;
+}
+
+.grandmaster, .grandmaster:hover {
+  color: #EE0000;
+}
+
+.organization {
+  color: #808080;
+  font-weight: 500;
+}
